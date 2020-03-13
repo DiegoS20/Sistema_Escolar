@@ -1,0 +1,1 @@
+<script src="<?php echo $conexion->get_path_from_origin('app/js/bootstrap.min.js') ?>"></script>
