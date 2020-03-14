@@ -1,0 +1,23 @@
+.bg {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0; left: 0;
+    background-image: url(../assets/images/login_bg.jpg);
+    background-size: cover;
+    z-index: -1;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.login {
+    width: 25%;
+    height: 60vh;
+    background-color: #000;
+    position: relative;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
