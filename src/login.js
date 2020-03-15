@@ -45,7 +45,12 @@ loginForm.addEventListener('submit', e => {
                     }
                 },
                 error: () => {
-                    console.log("Algo mal ha sucedido. Inténtalo más tarde");
+                    Swal.fire({
+                        icon: 'warning',
+                        title: "Error",
+                        text: 'Algo mal ha sucedido. Inténtalo más tarde',
+                        timer: 5000
+                    });
                 }
             });
         }
