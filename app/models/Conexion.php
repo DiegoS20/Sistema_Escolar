@@ -464,7 +464,7 @@ class Conexion
     
     // Datos de conexion para servidor local
     private const DB_SERVER = "localhost"; // Name of server
-    private const DB_BBDD = ""; // Name of data base
+    private const DB_BBDD = "sisescolar"; // Name of data base
     private const DB_USER = "root"; // Name of the user of the data_base
     private const DB_PASSWORD = ""; // Password to log in to the data base
     private const arrayOptions = array(

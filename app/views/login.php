@@ -15,21 +15,21 @@
     <main>
         <div class="bg"></div>
         <div class="container">
-            <div class="login" id="login-form">
+            <div class="login">
                 <div class="head-icon"><i class="fas fa-user-circle"></i></div>
                 <p class="login-text">Inicia sesión</p>
-                <form action="">
+                <form action id="login-form" method="POST">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Correo electrónico</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escribe tu email aquí" required>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Escribe tu email aquí" name="email" required>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Contraseña</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Escribe tu contraseña aquí" required>
+                        <input type="password" class="form-control" id="password" placeholder="Escribe tu contraseña aquí" name="password" required>
                     </div>
                     <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Recordarme en este equipo</label>
+                        <input type="checkbox" class="form-check-input" name="remember" id="remember">
+                        <label class="form-check-label" for="remember">Recordarme en este equipo</label>
                     </div>
                     <button type="submit" class="btn btn-primary" style="width: 100%;">Ingresar</button>
                 </form>
