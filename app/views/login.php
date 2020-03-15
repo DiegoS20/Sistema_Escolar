@@ -1,4 +1,4 @@
-<?php require_once('app/models/Conexion.php'); ?>
+<?php require_once('../models/Conexion.php'); ?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -15,13 +15,13 @@
     <main>
         <div class="bg"></div>
         <div class="container">
-            <div class="login">
+            <div class="login" id="login-form">
                 <div class="head-icon"><i class="fas fa-user-circle"></i></div>
                 <p class="login-text">Inicia sesión</p>
                 <form action="">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Correo electrónico</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escribe tu email aquí" required autocomplete="off">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escribe tu email aquí" required>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Contraseña</label>
@@ -36,6 +36,7 @@
             </div>
         </div>
     </main>
+    <script src="app/js/login.js"></script>
     <script src="app/js/jquery.min.js"></script>
     <script src="app/js/popper.min.js"></script>
     <script src="app/js/bootstrapmaterial.min.js"></script>
