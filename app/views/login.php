@@ -36,12 +36,12 @@
             </div>
         </div>
     </main>
-    <script src="app/js/login.js"></script>
-    <script src="app/js/jquery.min.js"></script>
-    <script src="app/js/popper.min.js"></script>
-    <script src="app/js/bootstrapmaterial.min.js"></script>
-    <script src="app/js/sweetalert2.min.js"></script>
-    <script src="app/js/fontawesome.min.js"></script>
+    <script src="app/js/libs/login.js"></script>
+    <script src="app/js/libs/jquery.min.js"></script>
+    <script src="app/js/libs/popper.min.js"></script>
+    <script src="app/js/libs/bootstrapmaterial.min.js"></script>
+    <script src="app/js/libs/sweetalert2.min.js"></script>
+    <script src="app/js/libs/fontawesome.min.js"></script>
     <script>
         $(document).ready(function() {
             $('body').bootstrapMaterialDesign();

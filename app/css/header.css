@@ -1,0 +1,41 @@
+a {
+    color: #fff;
+}
+
+header {
+    background-color: rgb(25, 25, 25);
+    border-bottom: 1px solid #000;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.menu-icon {
+    width: 40px;
+    height: 40px;
+}
+.menu-icon span {
+    width: 100%;
+    height: 100%;
+    font-size: 1.33rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.menu-icon:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
