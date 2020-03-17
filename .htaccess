@@ -5,4 +5,8 @@ RewriteRule ^login ./app/views/login.php
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php !-f
+RewriteRule ^profile/administrator/(.*)$ ./app/views/admin/$1.php
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php !-f
 RewriteRule ^profile/(.*)$ ./app/views/$1.php

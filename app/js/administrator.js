@@ -14,6 +14,16 @@ sections.forEach(function (sec) {
       sec.classList.remove('clicked');
     }
   });
+});
+var dashboardSections = document.querySelectorAll('.dashboard-section');
+dashboardSections.forEach(function (sec) {
+  sec.addEventListener('click', function (e) {
+    var target = e.target.dataset.href;
+
+    if (target) {
+      location.href += "/".concat(target);
+    }
+  });
 }); // -------------------- Functions --------------------
 
 function changeContentPadding(e) {

@@ -15,6 +15,16 @@ sections.forEach(sec => {
     });
 });
 
+const dashboardSections = document.querySelectorAll('.dashboard-section');
+dashboardSections.forEach(sec => {
+    sec.addEventListener('click', e => {
+        const target = e.target.dataset.href;
+        if (target) {
+            location.href += `/${target}`;
+        }
+    });
+});
+
 // -------------------- Functions --------------------
 function changeContentPadding(e) {
     const content = document.getElementsByClassName('content')[0];

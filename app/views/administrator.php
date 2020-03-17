@@ -40,7 +40,7 @@
                 </div>
             </div>
         </div>
-        <div class="content">
+        <div class="content" id="content">
             <div class="user-personal-info">
                 <div class="image">
                     <img src="../app/assets/images/unknown_user.jpg" alt="<?php echo $_SESSION['name']; ?>" title="<?php echo $_SESSION['name']; ?>">
@@ -54,25 +54,25 @@
             </div>
             <div class="sections">
                 <div class="sections-row">
-                    <section class="dashboard-section students">
+                    <section class="dashboard-section students" data-href="students">
                         <div class="icon">
                             <span><i class="fas fa-users"></i></span>
                         </div>
                         <div class="title">Alumnos</div>
                     </section>
-                    <section class="dashboard-section teachers">
+                    <section class="dashboard-section teachers" data-href="teachers">
                         <div class="icon">
                             <span><i class="fas fa-chalkboard-teacher"></i></span>
                         </div>
                         <div class="title">Maestros</div>
                     </section>
-                    <section class="dashboard-section activities">
+                    <section class="dashboard-section activities" data-href="activities">
                         <div class="icon">
                             <span><i class="fas fa-calendar-alt"></i></span>
                         </div>
                         <div class="title">Actividades</div>
                     </section>
-                    <section class="dashboard-section ratings">
+                    <section class="dashboard-section ratings" data-href="rating">
                         <div class="icon">
                             <span><i class="fas fa-clipboard"></i></span>
                         </div>
@@ -83,6 +83,7 @@
         </div>
     </main>
     <?php include '../includes/general-js-files.php'; ?>
+    <script src="../app/js/functions.js"></script>
     <script src="../app/js/administrator.js"></script>
 </body>
 </html>
