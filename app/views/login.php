@@ -1,4 +1,10 @@
-<?php require_once('../models/Conexion.php'); ?>
+<?php
+    require_once('../models/Conexion.php');
+    if (isset($_SESSION['role'])) {
+        header("Location: profile/" . $_SESSION['role']);
+        exit();
+    }
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -36,7 +42,7 @@
             </div>
         </div>
     </main>
-    <script src="app/js/libs/login.js"></script>
+    <script src="app/js/login.js"></script>
     <script src="app/js/libs/jquery.min.js"></script>
     <script src="app/js/libs/popper.min.js"></script>
     <script src="app/js/libs/bootstrapmaterial.min.js"></script>

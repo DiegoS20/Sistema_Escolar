@@ -64,7 +64,7 @@ main {
     content: '';
     width: 0; 
     height: 0; 
-    border-right: 0.67rem solid #fff;
+    border-right: 0.67rem solid rgb(221, 221, 221);
     border-top: 0.33rem solid transparent;
     border-bottom: 0.33rem solid transparent;
     position: relative;

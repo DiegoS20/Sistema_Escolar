@@ -22,5 +22,7 @@ sidebarElements.forEach(function (element) {
 
 function toggleSidebar(e) {
   var sidebar = document.getElementsByClassName('sidebar')[0];
+  var alternatingEvent = new Event('alternating');
   sidebar.classList.toggle('hidden');
+  sidebar.dispatchEvent(alternatingEvent);
 }

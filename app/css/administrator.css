@@ -1,0 +1,124 @@
+.content {
+    width: 100%;
+    height: 100vh;
+    padding: 60px 20px 20px calc(11.33vw + 20px);
+    background-color: rgb(221, 221, 221);
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.content.fluid {
+    padding-left: 20px;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.user-personal-info {
+    width: 100%;
+    height: 38vh;
+    display: flex;
+    align-items: center;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+}
+
+.image {
+    width: 38vh;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-box-shadow: 3px 3px 3px 0.5px #000000;
+    box-shadow: 3px 3px 3px 0.5px #000000;
+}
+
+.info {
+    padding-left: 50px;
+}
+
+.nombre {
+    font-size: 3rem;
+}
+
+.email,
+.role {
+    font-size: 1.25rem;
+}
+
+.sections {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.sections-row {
+    display: flex;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.dashboard-section {
+    display: flex;
+    width: calc(100% / 5);
+    height: 125px;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    border-radius: 10px;
+    -webkit-box-shadow: 9px 9px 1px 0 rgba(0,0,0,1);
+    box-shadow: 5px 5px 1px 0 rgba(0,0,0,1);
+    position: relative;
+    justify-content: space-between;
+}
+.dashboard-section:hover {
+    cursor: pointer;
+}
+.dashboard-section:not(:last-child) {
+    margin-right: calc(100% / 20);
+}
+
+.dashboard-section.clicked {
+    -webkit-box-shadow: 0px 0px 0px 0 rgba(0,0,0,1);
+    box-shadow: 0px 0px 0px 0 rgba(0,0,0,1);
+    transform: translate(9px, 9px);
+}
+
+.dashboard-section .icon,
+.dashboard-section .title {
+    font-size: 1.5rem;
+}
+
+.dashboard-section .icon {
+    text-align: end;
+    width: 25%;
+}
+
+.dashboard-section .title {
+    text-align: center;
+    width: 75%;
+}
+
+.dashboard-section.students {
+    background-color: #17D3C4;
+}
+
+.dashboard-section.teachers {
+    background-color: #055DF7;
+    color: #fff;
+}
+
+.dashboard-section.activities {
+    background-color: #D5E113;
+}
+
+.dashboard-section.ratings {
+    background-color: #F21D41;
+    color: #fff;
+}

@@ -27,6 +27,7 @@ if (password_verify($password, $hash)) {
         "id" => $user_info[0]['id_user'],
         "name" => $user_info[0]['full_name'],
         "email" => $user_info[0]['email'],
+        "role" => $role[0]['role_name'],
     ]);
     exit("user verified:" . $role[0]['role_name']);
 }
