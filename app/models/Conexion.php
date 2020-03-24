@@ -243,6 +243,23 @@ class Conexion
     }
 
     /**
+     * Get the path from the full proyect begin
+     * 
+     * @return string The path
+     */
+    public function get_base_url() {
+        // Getting number of folders before the website folder
+        $a = count(explode('/', $_SERVER['DOCUMENT_ROOT']));
+
+        // Getting the $from_0 AND the path of the internal estructure of the website
+        $origin = explode("\\", __DIR__);
+
+        // Creating the path from the root of the server until the begining of the website
+        $base_url = str_replace('\\', "/", $_SERVER['DOCUMENT_ROOT']) . "/" . $origin[$a] . "/";
+        return $base_url;
+    }
+
+    /**
      * Get the path from where you are to where you want to be
      * 
      * @param string $path_from_origin The path from the root folder where you want to be
@@ -415,23 +432,6 @@ class Conexion
         $_root_folder = explode('/', $this->get_base_url());
         $root_folder = $_root_folder[count($_root_folder) - 2];
         return $root_folder;
-    }
-
-    /**
-     * Get the path from the full proyect begin
-     * 
-     * @return string The path
-     */
-    private function get_base_url() {
-        // Getting number of folders before the website folder
-        $a = count(explode('/', $_SERVER['DOCUMENT_ROOT']));
-
-        // Getting the $from_0 AND the path of the internal estructure of the website
-        $origin = explode("\\", __DIR__);
-
-        // Creating the path from the root of the server until the begining of the website
-        $base_url = str_replace('\\', "/", $_SERVER['DOCUMENT_ROOT']) . "/" . $origin[$a] . "/";
-        return $base_url;
     }
 
     /**

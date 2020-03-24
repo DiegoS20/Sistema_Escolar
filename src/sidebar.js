@@ -9,17 +9,6 @@ sidebar.addEventListener('click', e => {
     }
 });
 
-const sidebarElements = document.querySelectorAll('.sidebar-element');
-sidebarElements.forEach(element => {
-    element.addEventListener('click', e => {
-        if (!element.classList.contains('focused')) {
-            const elementFocused = document.getElementsByClassName('focused')[0];
-            elementFocused.classList.remove('focused');
-            element.classList.add('focused');
-        }
-    });
-});
-
 // --------------------------------------- Functions ---------------------------------------
 function toggleSidebar(e) {
     const sidebar = document.getElementsByClassName('sidebar')[0];

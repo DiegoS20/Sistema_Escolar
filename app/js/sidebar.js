@@ -8,16 +8,6 @@ sidebar.addEventListener('click', function (e) {
   if (sidebar.classList.contains('hidden')) {
     toggleSidebar();
   }
-});
-var sidebarElements = document.querySelectorAll('.sidebar-element');
-sidebarElements.forEach(function (element) {
-  element.addEventListener('click', function (e) {
-    if (!element.classList.contains('focused')) {
-      var elementFocused = document.getElementsByClassName('focused')[0];
-      elementFocused.classList.remove('focused');
-      element.classList.add('focused');
-    }
-  });
 }); // --------------------------------------- Functions ---------------------------------------
 
 function toggleSidebar(e) {

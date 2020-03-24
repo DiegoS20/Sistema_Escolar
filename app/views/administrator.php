@@ -11,35 +11,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administrador | <?php echo $_SESSION['name']; ?></title>
-    <?php include '../includes/general-css-files.php'; ?>
+    <?php
+        $_dir = $conexion->get_base_url() . 'profile';
+        define('DIR', $_dir);
+        include '../includes/general-css-files.php'; ?>
     <link rel="stylesheet" href="../app/css/sidebar.css">
     <link rel="stylesheet" href="../app/css/administrator.css">
 </head>
 <body>
-    <?php include '../includes/header.php'; ?>
+    <?php include '../includes/admin/header.php'; ?>
     <main>
-        <div class="sidebar">
-            <div class="sidebar-elements">
-                <div class="sidebar-element dashboard focused">
-                    <div class="side-icon">
-                        <span><i class="fas fa-cubes"></i></span>
-                    </div>
-                    <div class="side-text">Tablero</div>
-                </div>
-                <div class="sidebar-element students">
-                    <div class="side-icon">
-                        <span><i class="fas fa-user-graduate"></i></span>
-                    </div>
-                    <div class="side-text">Alumnos</div>
-                </div>
-                <div class="sidebar-element teachers">
-                    <div class="side-icon">
-                        <span><i class="fas fa-chalkboard-teacher"></i></span>
-                    </div>
-                    <div class="side-text">Maestros</div>
-                </div>
-            </div>
-        </div>
+        <?php include '../includes/admin/sidebar.php'; ?>
         <div class="content" id="content">
             <div class="user-personal-info">
                 <div class="image">
